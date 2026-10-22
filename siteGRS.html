@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRS Solaris - Energia Fotovoltaica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>GRS Solaris</h1>
+    <p>Energia Solar Fotovoltaica</p>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre a GRS Solaris</a></li>
+            <li><a href="#solucoes">Soluções</a></li>
+            <li><a href="#calculadora">Calculadora Solar</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="inicio">
+
+    <section id="sobre">
+        <h2>Sobre a GRS Solaris</h2>
+
+        <p>
+            A GRS Solaris é uma empresa voltada para soluções em energia
+            solar fotovoltaica, buscando oferecer alternativas para geração
+            de energia limpa, renovável e econômica.
+        </p>
+
+        <p>
+            Nosso objetivo é ajudar residências, empresas e pequenos
+            negócios a aproveitarem a energia do sol para reduzir seus
+            custos com energia elétrica e contribuir para um futuro mais
+            sustentável.
+        </p>
+    </section>
+
+    <section>
+        <h2>Energia Solar Fotovoltaica</h2>
+
+        <article>
+            <h3>Geração de Energia</h3>
+            <p>
+                Os sistemas fotovoltaicos utilizam a luz do sol para gerar
+                energia elétrica por meio de painéis solares.
+            </p>
+        </article>
+
+        <article>
+            <h3>Economia de Energia</h3>
+            <p>
+                A geração própria de energia pode proporcionar redução
+                nos gastos com a conta de energia elétrica.
+            </p>
+        </article>
+
+        <article>
+            <h3>Energia Limpa</h3>
+            <p>
+                A energia solar é uma fonte renovável que contribui para
+                a redução do uso de fontes convencionais de geração de
+                eletricidade.
+            </p>
+        </article>
+    </section>
+
+    <section id="solucoes">
+        <h2>Nossas Soluções</h2>
+
+        <article>
+            <h3>Sistemas Fotovoltaicos</h3>
+            <p>
+                Projetos de sistemas de geração de energia solar para
+                diferentes necessidades.
+            </p>
+        </article>
+
+        <article>
+            <h3>Instalação</h3>
+            <p>
+                Instalação e montagem de sistemas de energia solar
+                fotovoltaica.
+            </p>
+        </article>
+
+        <article>
+            <h3>Manutenção</h3>
+            <p>
+                Acompanhamento e manutenção dos equipamentos para manter
+                o sistema funcionando adequadamente.
+            </p>
+        </article>
+    </section>
+
+    <section>
+        <h2>Benefícios da Energia Solar</h2>
+
+        <ul>
+            <li>Geração de energia renovável</li>
+            <li>Possibilidade de redução da conta de energia</li>
+            <li>Maior aproveitamento da energia solar</li>
+            <li>Contribuição para a sustentabilidade</li>
+            <li>Valorização do imóvel</li>
+            <li>Geração de energia para residências e empresas</li>
+        </ul>
+    </section>
+
+    <!-- NOVA FUNCIONALIDADE JAVASCRIPT -->
+    <section id="calculadora" class="solar-calculator">
+        <h2>Calculadora de Consumo e Sistema Solar</h2>
+
+        <p>
+            Informe o consumo de energia elétrica de cada mês.
+            O sistema calculará automaticamente a demanda média mensal,
+            a demanda anual e uma estimativa da quantidade de módulos
+            fotovoltaicos de 550 Wp.
+        </p>
+
+        <div class="months-grid">
+            <div>
+                <label for="janeiro">Janeiro (kWh)</label>
+                <input type="number" id="janeiro" min="0" step="0.01">
+            </div>
+
+            <div>
+                <label for="fevereiro">Fevereiro (kWh)</label>
+                <input type="number" id="fevereiro" min="0" step="0.01">
+            </div>
+
+            <div>
+                <label for="marco">Março (kWh)</label>
+                <input type="number" id="marco" min="0" step="0.01">
+            </div>
+
+            <div>
+                <label for="abril">Abril (kWh)</label>
+                <input type="number" id="abril" min="0" step="0.01">
+            </div>
+
+            <div>
+                <label for="maio">Maio (kWh)</label>
+                <input type="number" id="maio" min="0" step="0.01">
+            </div>
+
+            <div>
+                <label for="junho">Junho (kWh)</label>
+                <input type="number" id="junho" min="0" step="0.01">
+            </div>
+
+            <div>
+                <label for="julho">Julho (kWh)</label>
+                <input type="number" id="julho" min="0" step="0.01">
+            </div>
+
+            <div>
+                <label for="agosto">Agosto (kWh)</label>
+                <input type="number" id="agosto" min="0" step="0.01">
+            </div>
+
+            <div>
+                <label for="setembro">Setembro (kWh)</label>
+                <input type="number" id="setembro" min="0" step="0.01">
+            </div>
+
+            <div>
+                <label for="outubro">Outubro (kWh)</label>
+                <input type="number" id="outubro" min="0" step="0.01">
+            </div>
+
+            <div>
+                <label for="novembro">Novembro (kWh)</label>
+                <input type="number" id="novembro" min="0" step="0.01">
+            </div>
+
+            <div>
+                <label for="dezembro">Dezembro (kWh)</label>
+                <input type="number" id="dezembro" min="0" step="0.01">
+            </div>
+        </div>
+
+        <div class="calculator-action">
+            <button type="button" id="btnCalcularSolar">Calcular Sistema Solar</button>
+        </div>
+
+        <div id="mensagemCalculadora" class="calculator-message"></div>
+
+        <div id="resultadosSolar" class="results-grid">
+            <div class="result-card">
+                <span>Demanda média mensal</span>
+                <strong id="mediaMensal">0,00 kWh</strong>
+            </div>
+
+            <div class="result-card">
+                <span>Demanda anual</span>
+                <strong id="demandaAnual">0,00 kWh</strong>
+            </div>
+
+            <div class="result-card">
+                <span>Geração anual por módulo</span>
+                <strong id="geracaoAnualModulo">0,00 kWh</strong>
+            </div>
+
+            <div class="result-card">
+                <span>Geração mensal por módulo</span>
+                <strong id="geracaoMensalModulo">0,00 kWh</strong>
+            </div>
+
+            <div class="result-card destaque">
+                <span>Placas de 550 Wp para 100%</span>
+                <strong id="placas100">0</strong>
+            </div>
+
+            <div class="result-card">
+                <span>Potência estimada instalada</span>
+                <strong id="potenciaInstalada">0,00 kWp</strong>
+            </div>
+
+            <div class="result-card">
+                <span>Consumo mensal atual</span>
+                <strong id="consumoMensalAtual">R$ 0,00</strong>
+            </div>
+
+            <div class="result-card">
+                <span>Economia mensal estimada</span>
+                <strong id="economiaMensal">R$ 0,00</strong>
+            </div>
+        </div>
+
+        <div class="technical-data">
+            <h3>Parâmetros utilizados</h3>
+            <p>Radiação média diária: <strong>5,126 kWh/m²</strong></p>
+            <p>Potência do módulo: <strong>550 Wp</strong></p>
+            <p>Rendimento do módulo: <strong>21,3%</strong></p>
+            <p>Área do módulo: <strong>2,10 m²</strong></p>
+            <p>Coeficiente do sistema: <strong>0,80</strong></p>
+            <p>Tarifa utilizada no cálculo: <strong>R$ 0,95/kWh</strong></p>
+            <p>Tarifa mínima considerada: <strong>50 kWh/mês</strong></p>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Solicite uma avaliação</h2>
+
+        <p>
+            Entre em contato com a GRS Solaris para conhecer melhor as
+            possibilidades de utilização da energia solar.
+        </p>
+
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+
+            <button type="submit">Solicitar contato</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 GRS Solaris - Todos os direitos reservados.</p>
+    <p>Energia Solar Fotovoltaica</p>
+    <p>Entre em contato conosco:</p>
+
+    <a href="">Instagram</a> |
+    <a href="">WhatsApp</a> |
+    <a href="">E-mail</a>
+</footer>
+
+<script src="calculadoraSolar.js"></script>
+
+</body>
+</html>
